@@ -1,0 +1,25 @@
+package: guidgen
+version: 1.1.0
+
+sources:
+  include:
+    - site-lisp/guidgen/**/*.l
+  exclude:
+    - site-lisp/guidgen/**/tests/*.l
+    - site-lisp/guidgen/**/examples/*.l
+
+document:
+  - site-lisp/guidgen/docs/README.rd
+
+files:
+  include:
+    - site-lisp/**/*.l
+    - site-lisp/**/*.lc
+    - site-lisp/guidgen/lib/*.dll
+    - site-lisp/guidgen/examples/**/*.*
+    - site-lisp/guidgen/docs/**/*.*
+    - site-lisp/guidgen/docs/**/*
+    - site-lisp/guidgen/scripts/**/*.*
+  exclude:
+    - site-lisp/guidgen-scratch.l
+    - site-lisp/guidgen/tests/*.*
