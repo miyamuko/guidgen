@@ -21,5 +21,4 @@ files:
     - site-lisp/guidgen/docs/**/*
     - site-lisp/guidgen/scripts/**/*.*
   exclude:
-    - site-lisp/guidgen-scratch.l
     - site-lisp/guidgen/tests/*.*
