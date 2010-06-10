@@ -2,11 +2,11 @@
 
 === 2008-08-20 / 1.1.0
 
-guidgen 1.1.0 ƒŠƒŠ[ƒX!
+guidgen 1.1.0 ãƒªãƒªãƒ¼ã‚¹!
 
-: V‹K‹@”\
+: æ–°è¦æ©Ÿèƒ½
 
-    * GUID ˆêŠ‡’uŠ·‹@”\‚ð’Ç‰Á
+    * GUID ä¸€æ‹¬ç½®æ›æ©Ÿèƒ½ã‚’è¿½åŠ 
       * ((<guidgen-replace-all-buffer>))
       * ((<guidgen-replace-buffer>))
       * ((<guidgen-replace-region>))
@@ -14,26 +14,26 @@ guidgen 1.1.0 ƒŠƒŠ[ƒX!
       * ((<guidgen-replace-history-clear>))
       * ((<guidgen-replace-history-show>))
 
-    * ’¼‘O‚Ì GUID ‚ðŒJ‚è•Ô‚·‹@”\‚ð’Ç‰Á
+    * ç›´å‰ã® GUID ã‚’ç¹°ã‚Šè¿”ã™æ©Ÿèƒ½ã‚’è¿½åŠ 
       * ((<guidgen-toggle-use-last-guid>))
       * ((<guidgen-use-last-guid-p>))
 
-: ”ñŒÝŠ·‚ðŠÜ‚Þ•ÏX“_
+: éžäº’æ›ã‚’å«ã‚€å¤‰æ›´ç‚¹
 
-    * ‚È‚µ
+    * ãªã—
 
-: ƒoƒOC³
+: ãƒã‚°ä¿®æ­£
 
-    * ‚È‚µ
+    * ãªã—
 
-: ‚»‚Ì‘¼
+: ãã®ä»–
 
-    * ‚È‚µ
+    * ãªã—
 
 
 === 2007-07-09 / 1.0.0
 
-guidgen 1.0.0 ƒŠƒŠ[ƒX!
+guidgen 1.0.0 ãƒªãƒªãƒ¼ã‚¹!
 
 
 =end

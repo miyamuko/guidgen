@@ -1,15 +1,15 @@
 =begin
 
-= guidgen - GUID ‚ð¶¬‚·‚éƒ‰ƒCƒuƒ‰ƒŠ‚Æƒc[ƒ‹
+= guidgen - GUID ã‚’ç”Ÿæˆã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ãƒ„ãƒ¼ãƒ«
 
-  * Author: ‚Ý‚â‚Þ‚± ‚©‚Â‚ä‚« ((<URL:mailto:miyamuko@gmail.com>))
+  * Author: ã¿ã‚„ã‚€ã“ ã‹ã¤ã‚†ã ((<URL:mailto:miyamuko@gmail.com>))
   * Home URL: ((<URL:http://miyamuko.s56.xrea.com/xyzzy/guidgen/intro.htm>))
   * Version: 1.1.0
 
 
 == SYNOPSIS
 
-  * ƒ‰ƒCƒuƒ‰ƒŠ
+  * ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 
       (require "guidgen")
 
@@ -24,7 +24,7 @@
           (guidgen :downcase t)
         (msgbox "GUID: ~A (~{#x~x ~})" guid-str guid-list))
 
-  * ƒtƒƒ“ƒgƒGƒ“ƒh
+  * ãƒ•ãƒ­ãƒ³ãƒˆã‚¨ãƒ³ãƒ‰
 
       M-x guidgen-copy-to-clipboard
       M-x guidgen-copy-to-kill-ring
@@ -58,19 +58,19 @@
 
 == DESCRIPTION
 
-guidgen ‚Í GUID ‚ð¶¬‚·‚é‚½‚ß‚Ìƒc[ƒ‹‚Å‚·B
-Microsoft ‚Ì guidgen.exe ‚Æ“¯‚¶ƒAƒ‹ƒSƒŠƒYƒ€ (‚Æ‚¢‚¤‚© CoCreateGuid) ‚Å GUID ‚ð¶¬‚µ‚Ü‚·B
+guidgen ã¯ GUID ã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®ãƒ„ãƒ¼ãƒ«ã§ã™ã€‚
+Microsoft ã® guidgen.exe ã¨åŒã˜ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ  (ã¨ã„ã†ã‹ CoCreateGuid) ã§ GUID ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-guidgen ‚ÍˆÈ‰º‚ÌŒ`Ž®‚Å GUID ‚ð¶¬‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+guidgen ã¯ä»¥ä¸‹ã®å½¢å¼ã§ GUID ã‚’ç”Ÿæˆã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-  * IMPLEMENT_OLECREATE ƒ}ƒNƒ
-  * DEFINE_GUID ƒ}ƒNƒ
+  * IMPLEMENT_OLECREATE ãƒžã‚¯ãƒ­
+  * DEFINE_GUID ãƒžã‚¯ãƒ­
   * static const GUID
-  * ƒŒƒWƒXƒgƒŠŒ`Ž® ({xxxxxxxx-...})
-  * urn Œ`Ž® (urn:uuid:xxxxxxxx-...)
-  * –³•ÏŠ· (xxxxxxxx-...)
+  * ãƒ¬ã‚¸ã‚¹ãƒˆãƒªå½¢å¼ ({xxxxxxxx-...})
+  * urn å½¢å¼ (urn:uuid:xxxxxxxx-...)
+  * ç„¡å¤‰æ› (xxxxxxxx-...)
 
-‚Ü‚½A‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚é‚Ì‚Å GUID ‚ð‘å—Ê‚É¶¬‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·B
+ã¾ãŸã€å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã‚‹ã®ã§ GUID ã‚’å¤§é‡ã«ç”Ÿæˆã™ã‚‹ã“ã¨ã‚‚å¯èƒ½ã§ã™ã€‚
 
     C-u M-x guidgen-insert
     C-u M-x guidgen-insert-implement-olecreate
@@ -82,32 +82,32 @@ guidgen ‚ÍˆÈ‰º‚ÌŒ`Ž®‚Å GUID ‚ð¶¬‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
 
 == INSTALL
 
-((<NetInstaller|URL:http://www7a.biglobe.ne.jp/~hat/xyzzy/ni.html>)) ‚ÅƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡‚Í 3 ˆÈ~‚ðA
-NetInstaller + ni-autoload ‚ðŽg‚Á‚Ä‚¢‚él‚Í 4 ˆÈ~‚Å OK ‚Å‚·B
+((<NetInstaller|URL:http://www7a.biglobe.ne.jp/~hat/xyzzy/ni.html>)) ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸå ´åˆã¯ 3 ä»¥é™ã‚’ã€
+NetInstaller + ni-autoload ã‚’ä½¿ã£ã¦ã„ã‚‹äººã¯ 4 ä»¥é™ã§ OK ã§ã™ã€‚
 
-(1) ƒA[ƒJƒCƒu‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·B
+(1) ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
     ((<URL:http://miyamuko.s56.xrea.com/xyzzy/archives/guidgen.zip>))
 
-(2) ƒA[ƒJƒCƒu‚ð“WŠJ‚µ‚ÄA$XYZZY/site-lisp ”z‰º‚Éƒtƒ@ƒCƒ‹‚ðƒRƒs[‚µ‚Ü‚·B
+(2) ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’å±•é–‹ã—ã¦ã€$XYZZY/site-lisp é…ä¸‹ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-(3) ~/.xyzzy ‚Ü‚½‚Í $XYZZY/site-lisp/siteinit.l ‚ÉˆÈ‰º‚ÌƒR[ƒh‚ð’Ç‰Á‚µ‚Ü‚·B
+(3) ~/.xyzzy ã¾ãŸã¯ $XYZZY/site-lisp/siteinit.l ã«ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
         ;; guidgen
         (require "guidgen")
 
-(4) Ý’è‚ð”½‰f‚³‚¹‚é‚½‚ß xyzzy ‚ðÄ‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
+(4) è¨­å®šã‚’åæ˜ ã•ã›ã‚‹ãŸã‚ xyzzy ã‚’å†èµ·å‹•ã—ã¦ãã ã•ã„ã€‚
 
-    ¦siteinit.l ‚É‹Lq‚µ‚½ê‡‚É‚ÍÄƒ_ƒ“ƒv‚ª•K—v‚Å‚·B
+    â€»siteinit.l ã«è¨˜è¿°ã—ãŸå ´åˆã«ã¯å†ãƒ€ãƒ³ãƒ—ãŒå¿…è¦ã§ã™ã€‚
 
-(5) ni-autoload ‚ðŽg‚Á‚Ä‚¢‚éê‡Aƒoƒbƒtƒ@‚Ì‰EƒNƒŠƒbƒNƒƒjƒ…[‚ÉuGUID¶¬v‚ª’Ç‰Á‚³‚ê‚Ü‚·B
+(5) ni-autoload ã‚’ä½¿ã£ã¦ã„ã‚‹å ´åˆã€ãƒãƒƒãƒ•ã‚¡ã®å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ã€ŒGUIDç”Ÿæˆã€ãŒè¿½åŠ ã•ã‚Œã¾ã™ã€‚
 
-    ni-autoload ‚ðŽg‚Á‚Ä‚¢‚È‚¢ê‡‚ÍAˆÈ‰º‚ÌƒR[ƒh‚ð .xyzzy ‚© siteinit.l ‚É’Ç‰Á‚·‚é‚±‚Æ‚ð‚¨Š©‚ß‚µ‚Ü‚·B
+    ni-autoload ã‚’ä½¿ã£ã¦ã„ãªã„å ´åˆã¯ã€ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã‚’ .xyzzy ã‹ siteinit.l ã«è¿½åŠ ã™ã‚‹ã“ã¨ã‚’ãŠå‹§ã‚ã—ã¾ã™ã€‚
 
-      ;; uƒc[ƒ‹vƒƒjƒ…[‚ÉuGUID¶¬v‚Æ‚¢‚¤ƒƒjƒ…[‚ð’Ç‰Á‚µ‚Ü‚·B
+      ;; ã€Œãƒ„ãƒ¼ãƒ«ã€ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ã€ŒGUIDç”Ÿæˆã€ã¨ã„ã†ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’è¿½åŠ ã—ã¾ã™ã€‚
       (guidgen-setup-app-menu)
 
-      ;; ‰EƒNƒŠƒbƒNƒƒjƒ…[‚ÉuGUID¶¬v‚Æ‚¢‚¤ƒƒjƒ…[‚ð’Ç‰Á‚µ‚Ü‚·B
+      ;; å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ã€ŒGUIDç”Ÿæˆã€ã¨ã„ã†ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’è¿½åŠ ã—ã¾ã™ã€‚
       (guidgen-setup-app-popup-menu)
 
 
@@ -115,7 +115,7 @@ NetInstaller + ni-autoload ‚ðŽg‚Á‚Ä‚¢‚él‚Í 4 ˆÈ~‚Å OK ‚Å‚·B
 
 === PACKAGE
 
-guidgen ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
+guidgen ã¯ä»¥ä¸‹ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚
 
   * guidgen
   * guidgen-ffi
@@ -123,18 +123,18 @@ guidgen ‚ÍˆÈ‰º‚ÌƒpƒbƒP[ƒW‚ð—˜—p‚µ‚Ä‚¢‚Ü‚·B
 
 === EXPORT
 
-guidgen ‚ÍˆÈ‰º‚ÌƒVƒ“ƒ{ƒ‹‚ð export ‚µ‚Ä‚¢‚Ü‚·B
+guidgen ã¯ä»¥ä¸‹ã®ã‚·ãƒ³ãƒœãƒ«ã‚’ export ã—ã¦ã„ã¾ã™ã€‚
 
-  * guidgen ƒpƒbƒP[ƒW
+  * guidgen ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
 
     * *guidgen-version*
     * guidgen
 
   * guidgen-ffi
 
-    “à•”—p‚È‚Ì‚ÅÈ—ªB
+    å†…éƒ¨ç”¨ãªã®ã§çœç•¥ã€‚
 
-  * editor ƒpƒbƒP[ƒW
+  * editor ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
 
     * guidgen-copy-to-clipboard
     * guidgen-copy-to-kill-ring
@@ -165,144 +165,144 @@ guidgen ‚ÍˆÈ‰º‚ÌƒVƒ“ƒ{ƒ‹‚ð export ‚µ‚Ä‚¢‚Ü‚·B
 
 --- *guidgen-version*
 
-    –{ƒ‰ƒCƒuƒ‰ƒŠ‚Ìƒo[ƒWƒ‡ƒ“‚ð•ÛŽ‚·‚é’è”‚Å‚·B
-    ƒo[ƒWƒ‡ƒ“‚Í major.minor.teeny ‚Æ‚¢‚¤Œ`Ž®‚Å‚·B
-    ‚»‚ê‚¼‚ê‚Ì”Ô†‚Í•K‚¸ 1 Œ…‚É‚·‚é‚Ì‚ÅAˆÈ‰º‚Ì‚æ‚¤‚É”äŠr‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·
-    (Ruby ‚Æ“¯‚¶‚Å‚· :-)B
+    æœ¬ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’ä¿æŒã™ã‚‹å®šæ•°ã§ã™ã€‚
+    ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¯ major.minor.teeny ã¨ã„ã†å½¢å¼ã§ã™ã€‚
+    ãã‚Œãžã‚Œã®ç•ªå·ã¯å¿…ãš 1 æ¡ã«ã™ã‚‹ã®ã§ã€ä»¥ä¸‹ã®ã‚ˆã†ã«æ¯”è¼ƒã™ã‚‹ã“ã¨ãŒã§ãã¾ã™
+    (Ruby ã¨åŒã˜ã§ã™ :-)ã€‚
 
         (if (string<= "1.1.0" guidgen:*guidgen-version*)
-            (1.1.0 ˆÈ~‚Å—LŒø‚Èˆ—)
-          (1.1.0 ‚æ‚è‘O‚Ìƒo[ƒWƒ‡ƒ“‚Å‚Ìˆ—))
+            (1.1.0 ä»¥é™ã§æœ‰åŠ¹ãªå‡¦ç†)
+          (1.1.0 ã‚ˆã‚Šå‰ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã®å‡¦ç†))
 
 
 === COMMAND
 
 --- guidgen-copy-to-clipboard
 
-    GUID ‚ð¶¬‚µ‚ÄƒNƒŠƒbƒvƒ{[ƒh‚ÉƒRƒs[‚µ‚Ü‚·B
+    GUID ã‚’ç”Ÿæˆã—ã¦ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-    Œ`Ž®‚Í–³•ÏŠ· (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ‚Å‚·B
+    å½¢å¼ã¯ç„¡å¤‰æ› (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ã§ã™ã€‚
 
 --- guidgen-copy-to-kill-ring
 
-    GUID ‚ð¶¬‚µ‚Ä kill ring ‚ÉƒRƒs[‚µ‚Ü‚·B
+    GUID ã‚’ç”Ÿæˆã—ã¦ kill ring ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-    Œ`Ž®‚Í–³•ÏŠ· (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ‚Å‚·B
+    å½¢å¼ã¯ç„¡å¤‰æ› (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ã§ã™ã€‚
 
 --- guidgen-toggle-use-last-guid
 
-    ’¼‘O‚Ì GUID ‚ðŒJ‚è•Ô‚·‚©‚Ç‚¤‚©‚ðØ‚è‘Ö‚¦‚Ü‚·B
+    ç›´å‰ã® GUID ã‚’ç¹°ã‚Šè¿”ã™ã‹ã©ã†ã‹ã‚’åˆ‡ã‚Šæ›¿ãˆã¾ã™ã€‚
 
 --- guidgen-use-last-guid-p
 
-    ’¼‘O‚Ì GUID ‚ðŒJ‚è•Ô‚·ê‡ non-nil ‚ð•Ô‚µ‚Ü‚·B
+    ç›´å‰ã® GUID ã‚’ç¹°ã‚Šè¿”ã™å ´åˆ non-nil ã‚’è¿”ã—ã¾ã™ã€‚
 
 --- guidgen-insert
 
-    GUID ‚ð¶¬‚µ‚ÄƒJ[ƒ\ƒ‹‰º‚É‘}“ü‚µ‚Ü‚·B
+    GUID ã‚’ç”Ÿæˆã—ã¦ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã«æŒ¿å…¥ã—ã¾ã™ã€‚
 
-    Œ`Ž®‚Í–³•ÏŠ· (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ‚Å‚·B
+    å½¢å¼ã¯ç„¡å¤‰æ› (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) ã§ã™ã€‚
 
 --- guidgen-replace
 
-    ƒJ[ƒ\ƒ‹‰º‚Ì GUID ‚ð’uŠ·‚µ‚Ü‚·B
+    ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã® GUID ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    ƒJ[ƒ\ƒ‹‰º‚É GUID ‚Á‚Û‚¢•¶Žš—ñ‚ª–³‚¢ê‡‚Í‰½‚à‚µ‚Ü‚¹‚ñB
+    ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã£ã½ã„æ–‡å­—åˆ—ãŒç„¡ã„å ´åˆã¯ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚
 
 --- guidgen-replace-or-insert
 
-    ƒJ[ƒ\ƒ‹‰º‚Ì GUID ‚ð’uŠ·‚µ‚Ü‚·B
+    ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã® GUID ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    ƒJ[ƒ\ƒ‹‰º‚É GUID ‚Á‚Û‚¢•¶Žš—ñ‚ª–³‚¢ê‡‚ÍV‚½‚É‘}“ü‚µ‚Ü‚·B
+    ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã£ã½ã„æ–‡å­—åˆ—ãŒç„¡ã„å ´åˆã¯æ–°ãŸã«æŒ¿å…¥ã—ã¾ã™ã€‚
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-replace-region
 
-    ƒŠ[ƒWƒ‡ƒ““à‚Ì GUID •¶Žš—ñ‚ð’uŠ·‚µ‚Ü‚·B
+    ãƒªãƒ¼ã‚¸ãƒ§ãƒ³å†…ã® GUID æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    ˆÈ‰º‚Ìƒpƒ^[ƒ“‚Éƒ}ƒbƒ`‚µ‚½•¶Žš—ñ‚ð GUID ‚Æ‚Ý‚È‚µ‚Ü‚· (X ‚Í 16 i”)B
+    ä»¥ä¸‹ã®ãƒ‘ã‚¿ãƒ¼ãƒ³ã«ãƒžãƒƒãƒã—ãŸæ–‡å­—åˆ—ã‚’ GUID ã¨ã¿ãªã—ã¾ã™ (X ã¯ 16 é€²æ•°)ã€‚
 
       XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
-    ‚È‚¨A“¯‚¶ GUID ‚Í“¯‚¶’l‚É’uŠ·‚³‚ê‚Ü‚·B
+    ãªãŠã€åŒã˜ GUID ã¯åŒã˜å€¤ã«ç½®æ›ã•ã‚Œã¾ã™ã€‚
 
-    —á:
-      ;; ’uŠ·‘O
+    ä¾‹:
+      ;; ç½®æ›å‰
       28EBC579-69EE-4A96-79C5-EB28EE69964A
       2EB4C86B-1854-4C82-6BC8-B42E5418824C
       BE7359FB-62F4-4880-FB59-73BEF4628048
       BE7359FB-62F4-4880-FB59-73BEF4628048
 
-      ;; ’uŠ·Œã
+      ;; ç½®æ›å¾Œ
       32DF4C88-46E0-412B-884C-DF32E0462B41
       7A210592-E915-48EB-9205-217A15E9EB48
       71CF1453-6FD2-4009-5314-CF71D26F0940
       71CF1453-6FD2-4009-5314-CF71D26F0940
 
-    ¦’ˆÓ
+    â€»æ³¨æ„
 
-    ˆÈ‰º‚Ì‚æ‚¤‚È XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ˆÈŠO‚ÌŒ`Ž®‚Ì GUID ‚É‚Í‘Î‰ž‚µ‚Ä‚¢‚Ü‚¹‚ñB
+    ä»¥ä¸‹ã®ã‚ˆã†ãª XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ä»¥å¤–ã®å½¢å¼ã® GUID ã«ã¯å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚
 
       DEFINE_GUID(<<name>>,
       0x045e9d7a, 0x2947, 0x475d, 0x7a, 0x9d, 0x5e, 0x04, 0x47, 0x29, 0x5d, 0x47);
 
 --- guidgen-replace-selection
 
-    ƒZƒŒƒNƒVƒ‡ƒ““à‚Ì GUID •¶Žš—ñ‚ð’uŠ·‚µ‚Ü‚·B
+    ã‚»ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³å†…ã® GUID æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    Ú×‚Í ((<guidgen-replace-region>)) ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+    è©³ç´°ã¯ ((<guidgen-replace-region>)) ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 --- guidgen-replace-buffer
 
-    ƒoƒbƒtƒ@“à‚Ì GUID •¶Žš—ñ‚ð’uŠ·‚µ‚Ü‚·B
+    ãƒãƒƒãƒ•ã‚¡å†…ã® GUID æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    Ú×‚Í ((<guidgen-replace-region>)) ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+    è©³ç´°ã¯ ((<guidgen-replace-region>)) ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 --- guidgen-replace-all-buffer
 
-    ‘Sƒoƒbƒtƒ@“à‚Ì GUID •¶Žš—ñ‚ð’uŠ·‚µ‚Ü‚·B
+    å…¨ãƒãƒƒãƒ•ã‚¡å†…ã® GUID æ–‡å­—åˆ—ã‚’ç½®æ›ã—ã¾ã™ã€‚
 
-    Ú×‚Í ((<guidgen-replace-region>)) ‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+    è©³ç´°ã¯ ((<guidgen-replace-region>)) ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 --- guidgen-replace-history-clear
 
-    GUID ‚Ì’uŠ·—š—ð‚ðƒNƒŠƒA‚µ‚Ü‚·B
+    GUID ã®ç½®æ›å±¥æ­´ã‚’ã‚¯ãƒªã‚¢ã—ã¾ã™ã€‚
 
 --- guidgen-replace-history-show
 
-    GUID ‚Ì’uŠ·—š—ð‚ðŽQÆ‚µ‚Ü‚·B
+    GUID ã®ç½®æ›å±¥æ­´ã‚’å‚ç…§ã—ã¾ã™ã€‚
 
-    o—Í—á:
+    å‡ºåŠ›ä¾‹:
       28EBC579-69EE-4A96-79C5-EB28EE69964A => 32DF4C88-46E0-412B-884C-DF32E0462B41
       2EB4C86B-1854-4C82-6BC8-B42E5418824C => 7A210592-E915-48EB-9205-217A15E9EB48
       BE7359FB-62F4-4880-FB59-73BEF4628048 => 71CF1453-6FD2-4009-5314-CF71D26F0940
 
 --- guidgen-insert-implement-olecreate
 
-    IMPLEMENT_OLECREATE ƒ}ƒNƒŒ`Ž®‚ÅƒJ[ƒ\ƒ‹‰º‚É GUID ‚ð‘}“ü‚µ‚Ü‚·B
+    IMPLEMENT_OLECREATE ãƒžã‚¯ãƒ­å½¢å¼ã§ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
     ex)
         // {82E6BCA9-3AA9-478F-A9BC-E682A93A8F47}
         IMPLEMENT_OLECREATE(<<class>>, <<external_name>>,
         0x82e6bca9, 0x3aa9, 0x478f, 0xa9, 0xbc, 0xe6, 0x82, 0xa9, 0x3a, 0x8f, 0x47);
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-insert-define-guid
 
-    DEFINE_GUID ƒ}ƒNƒŒ`Ž®‚ÅƒJ[ƒ\ƒ‹‰º‚É GUID ‚ð‘}“ü‚µ‚Ü‚·B
+    DEFINE_GUID ãƒžã‚¯ãƒ­å½¢å¼ã§ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
     ex)
         // {045E9D7A-2947-475D-7A9D-5E0447295D47}
         DEFINE_GUID(<<name>>,
         0x045e9d7a, 0x2947, 0x475d, 0x7a, 0x9d, 0x5e, 0x04, 0x47, 0x29, 0x5d, 0x47);
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-insert-static-const-guid
 
-    GUID \‘¢‘ÌŒ`Ž®‚ÅƒJ[ƒ\ƒ‹‰º‚É GUID ‚ð‘}“ü‚µ‚Ü‚·B
+    GUID æ§‹é€ ä½“å½¢å¼ã§ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
     ex)
         // {6EAC24CD-4E4F-4420-CD24-AC6E4F4E2044}
@@ -310,62 +310,62 @@ guidgen ‚ÍˆÈ‰º‚ÌƒVƒ“ƒ{ƒ‹‚ð export ‚µ‚Ä‚¢‚Ü‚·B
             0x6eac24cd, 0x4e4f, 0x4420, { 0xcd, 0x24, 0xac, 0x6e, 0x4f, 0x4e, 0x20, 0x44 }
         };
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-insert-registry
 
-    ƒŒƒWƒXƒgƒŠŒ`Ž®‚ÅƒJ[ƒ\ƒ‹‰º‚É GUID ‚ð‘}“ü‚µ‚Ü‚·B
+    ãƒ¬ã‚¸ã‚¹ãƒˆãƒªå½¢å¼ã§ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
     ex)
         {AEB3A288-457B-47DA-88A2-B3AE7B45DA47}
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-insert-urn
 
-    urn Œ`Ž®‚ÅƒJ[ƒ\ƒ‹‰º‚É GUID ‚ð‘}“ü‚µ‚Ü‚·B
+    urn å½¢å¼ã§ã‚«ãƒ¼ã‚½ãƒ«ä¸‹ã« GUID ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
     ex)
         urn:uuid:CA02D532-7FDC-4111-32D5-02CADC7F1141
 
-    ‘O’uˆø”‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+    å‰ç½®å¼•æ•°ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
 --- guidgen-track-popup-menu
 
-    GUID ‚ð¶¬‚·‚é‚½‚ß‚Ìƒƒjƒ…[‚ðƒ|ƒbƒvƒAƒbƒv‚µ‚Ä•\Ž¦‚µ‚Ü‚·B
+    GUID ã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ã—ã¦è¡¨ç¤ºã—ã¾ã™ã€‚
 
 --- guidgen-setup-app-menu
 
-    uƒc[ƒ‹vƒƒjƒ…[‚ÉuGUID¶¬v‚Æ‚¢‚¤ƒƒjƒ…[‚ð’Ç‰Á‚µ‚Ü‚·B
+    ã€Œãƒ„ãƒ¼ãƒ«ã€ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ã€ŒGUIDç”Ÿæˆã€ã¨ã„ã†ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
 --- guidgen-setup-app-popup-menu
 
-    ‰EƒNƒŠƒbƒNƒƒjƒ…[‚ÉuGUID¶¬v‚Æ‚¢‚¤ƒƒjƒ…[‚ð’Ç‰Á‚µ‚Ü‚·B
+    å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ã€ŒGUIDç”Ÿæˆã€ã¨ã„ã†ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
 --- guidgen-remove-app-menu
 
-    uƒc[ƒ‹vƒƒjƒ…[‚©‚çuGUID¶¬vƒƒjƒ…[‚ðíœ‚µ‚Ü‚·B
+    ã€Œãƒ„ãƒ¼ãƒ«ã€ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰ã€ŒGUIDç”Ÿæˆã€ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
 --- guidgen-remove-app-popup-menu
 
-    ‰EƒNƒŠƒbƒNƒƒjƒ…[‚©‚çuGUID¶¬vƒƒjƒ…[‚ðíœ‚µ‚Ü‚·B
+    å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰ã€ŒGUIDç”Ÿæˆã€ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
 
 === FUNCTION
 
 --- guidgen:guidgen &key downcase
 
-    GUID ‚ð¶¬‚µ‚Ü‚·B
-    ¶¬‚µ‚½ GUID ‚ð‘½’l‚Å•Ô‚µ‚Ü‚·B
-    (1) GUID ‚Ì•¶Žš—ñ•\Œ»
-    (2) GUID ‚ÌŠeƒtƒB[ƒ‹ƒh‚ð”’l‚É‚µ‚½ list
+    GUID ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+    ç”Ÿæˆã—ãŸ GUID ã‚’å¤šå€¤ã§è¿”ã—ã¾ã™ã€‚
+    (1) GUID ã®æ–‡å­—åˆ—è¡¨ç¾
+    (2) GUID ã®å„ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’æ•°å€¤ã«ã—ãŸ list
 
     ex)
         (guidgen:guidgen)
         "14DF2874-0B1E-4E62-7428-DF141E0B624E"
         (350169204 2846 20066 116 40 223 20 30 11 98 78)
 
-    downcase ‚É non-nil ‚ðŽw’è‚·‚é‚Æ¬•¶Žš‚Ì 16 i”‚Å GUID ‚ð¶¬‚µ‚Ü‚·B
+    downcase ã« non-nil ã‚’æŒ‡å®šã™ã‚‹ã¨å°æ–‡å­—ã® 16 é€²æ•°ã§ GUID ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
         (car (multiple-value-list (guidgen:guidgen :downcase t)))
         "c26ff9d9-aac2-4c2b-d9f9-6fc2c2aa2b4c"
@@ -373,7 +373,7 @@ guidgen ‚ÍˆÈ‰º‚ÌƒVƒ“ƒ{ƒ‹‚ð export ‚µ‚Ä‚¢‚Ü‚·B
 
 == EXPERIMENTAL FEATURE
 
-guidgen ‚Ìƒ‰ƒCƒuƒ‰ƒŠ•”•ª‚Í clisp ‚ÉŽÀŒ±“I‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
+guidgen ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªéƒ¨åˆ†ã¯ clisp ã«å®Ÿé¨“çš„ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚
 
     xyzzy/site-lisp> clisp --silent -i guidgen\guidgen.l
     ;; Loading file guidgen\guidgen.l ...
@@ -397,17 +397,17 @@ guidgen ‚Ìƒ‰ƒCƒuƒ‰ƒŠ•”•ª‚Í clisp ‚ÉŽÀŒ±“I‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
 
 == TODO
 
-‚È‚µB
+ãªã—ã€‚
 
 
 == KNOWN BUGS
 
-‚È‚µB
+ãªã—ã€‚
 
 
 == AUTHOR
 
-‚Ý‚â‚Þ‚± ‚©‚Â‚ä‚« (((<URL:mailto:miyamuko (at) gmail.com>)))
+ã¿ã‚„ã‚€ã“ ã‹ã¤ã‚†ã (((<URL:mailto:miyamuko (at) gmail.com>)))
 
 
 == SEE ALSO
@@ -424,7 +424,7 @@ guidgen ‚Ìƒ‰ƒCƒuƒ‰ƒŠ•”•ª‚Í clisp ‚ÉŽÀŒ±“I‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B
 
 == COPYRIGHT
 
-guidgen ‚Í MIT/X ƒ‰ƒCƒZƒ“ƒX‚ÉŠî‚Ã‚¢‚Ä—˜—p‰Â”\‚Å‚·B
+guidgen ã¯ MIT/X ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã«åŸºã¥ã„ã¦åˆ©ç”¨å¯èƒ½ã§ã™ã€‚
 
 See guidgen/docs/MIT-LICENSE for full license.
 

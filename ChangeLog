@@ -2,7 +2,7 @@
 
 	* guidgen 1.1.0 released!
 
-	* GUID ˆêŠ‡’uŠ·‹@”\‚ğ’Ç‰Á
+	* GUID ä¸€æ‹¬ç½®æ›æ©Ÿèƒ½ã‚’è¿½åŠ 
 	  - guidgen-replace-all-buffer
 	  - guidgen-replace-buffer
 	  - guidgen-replace-region
@@ -10,7 +10,7 @@
 	  - guidgen-replace-history-clear
 	  - guidgen-replace-history-show
 
-	* ’¼‘O‚Ì GUID ‚ğŒJ‚è•Ô‚·‹@”\‚ğ’Ç‰Á
+	* ç›´å‰ã® GUID ã‚’ç¹°ã‚Šè¿”ã™æ©Ÿèƒ½ã‚’è¿½åŠ 
 	  - guidgen-toggle-use-last-guid
 	  - guidgen-use-last-guid-p
 
@@ -20,18 +20,18 @@
 
 2006-07-07  MIYAMUKO Katsuyuki
 
-	* README.txt ‚ğ MIT-LICENSE ‚ğ site-lisp/guidgen ‚ÉˆÚ“®B
+	* README.txt ã‚’ MIT-LICENSE ã‚’ site-lisp/guidgen ã«ç§»å‹•ã€‚
 
-	* ƒtƒ@ƒCƒ‹\¬‚ğ•ÏXB
+	* ãƒ•ã‚¡ã‚¤ãƒ«æ§‹æˆã‚’å¤‰æ›´ã€‚
 	ui-about.l => editor/about.l
 	ui-editor.l => editor/command.l
 	ui-menu.l => editor/menu.l
 
 2006-07-05  MIYAMUKO Katsuyuki
 
-	* urn:uuid:xxxx Œ`®‚ğƒTƒ|[ƒg‚µ‚½B
+	* urn:uuid:xxxx å½¢å¼ã‚’ã‚µãƒãƒ¼ãƒˆã—ãŸã€‚
 
-	* ƒc[ƒ‹ƒƒjƒ…[‚Æ‰EƒNƒŠƒbƒNƒƒjƒ…[‚É’Ç‰ÁEíœ‚·‚éŠÖ”‚ğì¬B
+	* ãƒ„ãƒ¼ãƒ«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¨å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¿½åŠ ãƒ»å‰Šé™¤ã™ã‚‹é–¢æ•°ã‚’ä½œæˆã€‚
 	- guidgen-install-app-menu
 	- guidgen-install-app-popup-menu
 	- guidgen-uninstall-app-menu
@@ -39,9 +39,9 @@
 
 2006-07-04  MIYAMUKO Katsuyuki
 
-	* ƒ‰ƒCƒuƒ‰ƒŠ•”•ª (guidgen/guidgen) ‚ÍÀŒ±“I‚É clisp ‚É‘Î‰B
+	* ãƒ©ã‚¤ãƒ–ãƒ©ãƒªéƒ¨åˆ† (guidgen/guidgen) ã¯å®Ÿé¨“çš„ã« clisp ã«å¯¾å¿œã€‚
 
-	* ˆÈ‰º‚ÌŠÖ”‚ğ’Ç‰ÁB
+	* ä»¥ä¸‹ã®é–¢æ•°ã‚’è¿½åŠ ã€‚
 	- guidgen-replace
 	- guidgen-replace-or-insert
 	- guidgen-insert-implement-olecreate
@@ -52,5 +52,5 @@
 
 2006-06-22  MIYAMUKO Katsuyuki
 
-	* guidgen.l ì¬ŠJnB
+	* guidgen.l ä½œæˆé–‹å§‹ã€‚
 
