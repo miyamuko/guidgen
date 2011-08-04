@@ -66,6 +66,10 @@
              'guidgen-toggle-use-last-guid
              #'(lambda ()
                  (if (guidgen-use-last-guid-p) :check)))
+            (:item nil "¬•¶š‚Å GUID ‚ğ¶¬ (&L)"
+             'guidgen-toggle-use-downcase
+             #'(lambda ()
+                 (if (guidgen-use-downcase-p) :check)))
             :sep
             (:item nil (concat "guidgen &version " *guidgen-version*)
              'guidgen-about-message)

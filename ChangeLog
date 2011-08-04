@@ -1,3 +1,9 @@
+2011-08-04  MIYAMUKO Katsuyuki
+
+	* 小文字で GUID を生成する機能を追加
+	  - guidgen-toggle-use-downcase
+	  - guidgen-use-downcase-p
+
 2008-08-20  MIYAMUKO Katsuyuki
 
 	* guidgen 1.1.0 released!

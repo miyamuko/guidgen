@@ -19,6 +19,9 @@
           guidgen-toggle-use-last-guid
           guidgen-use-last-guid-p
 
+          guidgen-toggle-use-downcase
+          guidgen-use-downcase-p
+
           guidgen-replace-history-clear
           guidgen-replace-history-show
 
@@ -41,6 +44,7 @@
   guidgen::*guid-regexp-strict*)
 
 (defparameter *guidgen-use-last-guid* nil)
+(defparameter *guidgen-use-downcase* nil)
 (defparameter *guidgen-replace-history* nil)
 
 (defun guidgen-toggle-use-last-guid ()
@@ -51,11 +55,19 @@
 (defun guidgen-use-last-guid-p ()
   *guidgen-use-last-guid*)
 
+(defun guidgen-toggle-use-downcase ()
+  (interactive)
+  (setf *guidgen-use-downcase*
+        (not *guidgen-use-downcase*)))
+
+(defun guidgen-use-downcase-p ()
+  *guidgen-use-downcase*)
+
 (defun next-guid ()
   (if (and (guidgen-use-last-guid-p)
            (guidgen-last-guid))
       (guidgen-last-guid)
-    (guidgen)))
+    (guidgen :downcase (guidgen-use-downcase-p))))
 
 
 (defmacro guidgen-define-insert (name (&rest lambda-list) &body body)
