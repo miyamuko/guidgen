@@ -1,5 +1,8 @@
 2011-08-04  MIYAMUKO Katsuyuki
 
+	* DEFINE_GUID などで GUID を生成するときに
+	大文字で生成するときはコード部分の 16 進数も大文字にするようにした
+
 	* 小文字で GUID を生成する機能を追加
 	  - guidgen-toggle-use-downcase
 	  - guidgen-use-downcase-p

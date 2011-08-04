@@ -189,15 +189,15 @@
 ;; // {6BE050B4-C19D-4e64-97EA-6C27B7AEB91E}
 ;; IMPLEMENT_OLECREATE(<<class>>, <<external_name>>,
 ;; 0x6be050b4, 0xc19d, 0x4e64, 0x97, 0xea, 0x6c, 0x27, 0xb7, 0xae, 0xb9, 0x1e);
-(defvar *guidgen-implement-olecreate-format*
+(defun guidgen-implement-olecreate-format ()
   (concat "// {~A}~%"
           "IMPLEMENT_OLECREATE(<<class>>, <<external_name>>,~%"
-          (substitute-string "~8, ~4, ~4, ~@{~2~^, ~}" "~[0-9]" "0x\\0,'0X")
+          (expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
           ");~%"))
 
 (guidgen-define-insert guidgen-insert-implement-olecreate (&optional class external-name)
   (interactive "*")
-  (guidgen-insert-template *guidgen-implement-olecreate-format*
+  (guidgen-insert-template (guidgen-implement-olecreate-format)
                            :replacement (list (cons "<<class>>" class)
                                               (cons "<<external_name>>" external-name))
                            :cursor (if (interactive-p) '("<<class>>" "<<external_name>>"))))
@@ -205,15 +205,15 @@
 ;; // {6BE050B4-C19D-4e64-97EA-6C27B7AEB91E}
 ;; DEFINE_GUID(<<name>>,
 ;; 0x6be050b4, 0xc19d, 0x4e64, 0x97, 0xea, 0x6c, 0x27, 0xb7, 0xae, 0xb9, 0x1e);
-(defvar *guidgen-define-guid-format*
+(defun guidgen-define-guid-format ()
   (concat "// {~A}~%"
           "DEFINE_GUID(<<name>>,~%"
-          (substitute-string "~8, ~4, ~4, ~@{~2~^, ~}" "~[0-9]" "0x\\0,'0X")
+          (expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
           ");~%"))
 
 (guidgen-define-insert guidgen-insert-define-guid (&optional name)
   (interactive "*")
-  (guidgen-insert-template *guidgen-define-guid-format*
+  (guidgen-insert-template (guidgen-define-guid-format)
                            :replacement (list (cons "<<name>>" name))
                            :cursor (if (interactive-p) "<<name>>")))
 
@@ -221,27 +221,27 @@
 ;; static const GUID <<name>> = {
 ;;     0x2e00421e, 0x3154, 0x4641, { 0xab, 0x6b, 0xc8, 0xbc, 0x93, 0x81, 0x5e, 0xc0 }
 ;; };
-(defvar *guidgen-static-const-guid-format*
+(defun guidgen-static-const-guid-format ()
   (concat "// {~A}~%"
           "static const GUID <<name>> = {~%"
-          "    " (substitute-string "~8, ~4, ~4, { ~@{~2~^, ~} }" "~[0-9]" "0x\\0,'0X")
+          "    " (expand-guid-format-string "~8, ~4, ~4, { ~@{~2~^, ~} }")
           "~%"
           "};~%"))
 
 (guidgen-define-insert guidgen-insert-static-const-guid (&optional name)
   (interactive "*")
-  (guidgen-insert-template *guidgen-static-const-guid-format*
+  (guidgen-insert-template (guidgen-static-const-guid-format)
                            :replacement (list (cons "<<name>>" name))
                            :cursor (if (interactive-p) "<<name>>")))
 
 
 ;; {2E00421E-3154-4641-AB6B-C8BC93815EC0}
-(defvar *guidgen-registry-format*
+(defun guidgen-registry-format ()
   "{~A}")
 
 (guidgen-define-insert guidgen-insert-registry ()
   (interactive "*")
-  (guidgen-insert-template *guidgen-registry-format*))
+  (guidgen-insert-template (guidgen-registry-format)))
 
 
 (defun guidgen-insert-template (template &key replacement cursor)
@@ -275,6 +275,14 @@
             (start-selection 2 t)
             (goto-char (match-beginning 0))
             (return)))))))
+
+(defun expand-guid-format-string (format-string)
+  (substitute-string format-string
+                     "~[0-9]"
+                     (if (guidgen-use-downcase-p)
+                         "0x\\0,'0X"
+                       "0x~:@(\\0,'0X~)"
+                     )))
 
 
 (provide "guidgen/editor/command")
