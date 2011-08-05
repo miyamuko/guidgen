@@ -192,7 +192,7 @@
 (defun guidgen-implement-olecreate-format ()
   (concat "// {~A}~%"
           "IMPLEMENT_OLECREATE(<<class>>, <<external_name>>,~%"
-          (expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
+          (guidgen-expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
           ");~%"))
 
 (guidgen-define-insert guidgen-insert-implement-olecreate (&optional class external-name)
@@ -208,7 +208,7 @@
 (defun guidgen-define-guid-format ()
   (concat "// {~A}~%"
           "DEFINE_GUID(<<name>>,~%"
-          (expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
+          (guidgen-expand-guid-format-string "~8, ~4, ~4, ~@{~2~^, ~}")
           ");~%"))
 
 (guidgen-define-insert guidgen-insert-define-guid (&optional name)
@@ -224,7 +224,7 @@
 (defun guidgen-static-const-guid-format ()
   (concat "// {~A}~%"
           "static const GUID <<name>> = {~%"
-          "    " (expand-guid-format-string "~8, ~4, ~4, { ~@{~2~^, ~} }")
+          "    " (guidgen-expand-guid-format-string "~8, ~4, ~4, { ~@{~2~^, ~} }")
           "~%"
           "};~%"))
 
@@ -276,7 +276,7 @@
             (goto-char (match-beginning 0))
             (return)))))))
 
-(defun expand-guid-format-string (format-string)
+(defun guidgen-expand-guid-format-string (format-string)
   (substitute-string format-string
                      "~[0-9]"
                      (if (guidgen-use-downcase-p)
