@@ -1,5 +1,15 @@
 == History
 
+=== 2011/08/xx
+
+* 1.2.0 リリース!
+  - 新規機能
+    - DEFINE_GUID などで GUID を生成するときに
+      大文字で生成するときはコード部分の 16 進数も大文字にするようにした
+    - 小文字で GUID を生成する機能を追加
+      - guidgen-toggle-use-downcase
+      - guidgen-use-downcase-p
+
 === 2008/08/20
 
 * 1.1.0 リリース!

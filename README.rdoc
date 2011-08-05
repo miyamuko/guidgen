@@ -137,6 +137,14 @@ guidgen は以下の形式で GUID を生成することができます。
 
   直前の GUID を繰り返す場合 non-nil を返します。
 
+* guidgen-toggle-use-downcase
+
+  GUID を小文字で生成するかどうかを切り替えます。
+
+* guidgen-use-downcase-p
+
+  GUID を小文字で生成する場合 non-nil を返します。
+
 * guidgen-insert
 
   GUID を生成してカーソル下に挿入します。
