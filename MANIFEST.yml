@@ -9,7 +9,7 @@ sources:
     - site-lisp/guidgen/**/examples/*.l
 
 document:
-  - site-lisp/guidgen/docs/README.rd
+  - README.rdoc
 
 files:
   include:
