@@ -1,7 +1,7 @@
 == guidgen - GUID を生成するライブラリとツール
 
 * Home URL: http://miyamuko.s56.xrea.com/xyzzy/guidgen/intro.htm
-* Version: 1.1.0
+* Version: 1.2.0
 
 
 === SYNOPSIS

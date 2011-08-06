@@ -1,3 +1,7 @@
+2011-08-06  MIYAMUKO Katsuyuki
+
+	* guidgen 1.2.0 released!
+
 2011-08-04  MIYAMUKO Katsuyuki
 
 	* DEFINE_GUID などで GUID を生成するときに

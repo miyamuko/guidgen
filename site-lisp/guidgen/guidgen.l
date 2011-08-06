@@ -37,7 +37,7 @@
           ))
 
 
-(defconstant *guidgen-version* "1.1.0")
+(defconstant *guidgen-version* "1.2.0")
 
 (defconstant *guid-format* (format nil "~{~{~~~D,'0X~}~^-~}"
                                    '((8) (4) (4)
